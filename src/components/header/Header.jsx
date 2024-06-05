@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { FaCartShopping } from "react-icons/fa6";
-// import logo from 'https://img.freepik.com/premium-vector/online-shop-logo-design-template-perfect-ecommerce-sale-store-shop-discount-web_695238-64.jpg";
-// import 'C:/Users/YASH MEHTA/Desktop/Ecommerce website/frontend/src/App.css';
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
