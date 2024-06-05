@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaCartShopping } from "react-icons/fa6";
+import { NavLink } from 'react-router-dom';
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -13,15 +14,15 @@ export const Header = () => {
                 <div className="container flex flex-col mx-auto bg-white">
                     <div className="relative flex flex-wrap items-center justify-between w-[100%] bg-white group shrink-0">
                         <div>
-                            <a href="/">
+                            <NavLink to={"/"}>
                                 <img className="h-[120px]" src="https://img.freepik.com/premium-vector/online-shop-logo-design-template-perfect-ecommerce-sale-store-shop-discount-web_695238-64.jpg" alt="Logo" />
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="items-center justify-between hidden gap-12 text-black md:flex">
-                            <a className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" href="/">Home</a>
-                            <a className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" href="#">Product</a>
-                            <a className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" href="/about">About</a>
-                            <a href='/contact' className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link">Contact</a>
+                            <NavLink className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" to={"/"}>Home</NavLink>
+                            <NavLink className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" to={"#"}>Product</NavLink>
+                            <NavLink className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" to={"/about"}>About</NavLink>
+                            <NavLink to={'/contact'} className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link">Contact</NavLink>
                         </div>
                         <div className="items-center hidden gap-8 md:flex">
                             <button className="flex items-center text-lg font-normal text-gray-800 hover:text-gray-900 transition duration-300">Log In</button>
@@ -36,10 +37,10 @@ export const Header = () => {
                             </svg>
                         </button>
                         <div className={`absolute flex md:hidden transition-all duration-300 ease-in-out flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-white ${isOpen ? 'max-h-64 py-4' : 'max-h-0'} px-4 rounded-2xl top-full`}>
-                            <a className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" href="#">Home</a>
-                            <a className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" href="#">Product</a>
-                            <a className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" href="#">About</a>
-                            <a className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" href="#">Contact</a>
+                            <NavLink className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" to={"/"}>Home</NavLink>
+                            <NavLink className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" to={"#"}>Product</NavLink>
+                            <NavLink className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" to={"#"}>About</NavLink>
+                            <NavLink className="text-lg font-normal text-dark-grey-700 hover:text-dark-grey-900 nav-link" to={"/contact"}>Contact</NavLink>
                             <button className="flex items-center text-lg font-normal text-black">Log In</button>
                             <button className="flex items-center px-0 py-2 text-lg font-bold rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white transition duration-300">Sign Up</button>
                         </div>
