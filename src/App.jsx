@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import { Header } from './components/header/Header'
 import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
@@ -13,8 +13,9 @@ function App() {
 
   return (
     <>
-      <Header />
-      <BrowserRouter>
+
+      <HashRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -24,7 +25,7 @@ function App() {
           <Route path="*" element={<Error />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
