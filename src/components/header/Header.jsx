@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaCartShopping } from "react-icons/fa6";
-
+import './App.css'
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-// import './App.css'
+import './App.css'
 import { Header } from './components/header/Header'
 import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import { Products } from './components/Products'
