@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="*" element={<Error />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
