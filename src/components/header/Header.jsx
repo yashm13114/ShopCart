@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaCartShopping } from "react-icons/fa6";
-import logo from 'C:/Users/YASH MEHTA/Desktop/Ecommerce website/frontend/src/assets/images/Cart.png';
-import 'C:/Users/YASH MEHTA/Desktop/Ecommerce website/frontend/src/App.css';
+// import logo from 'https://img.freepik.com/premium-vector/online-shop-logo-design-template-perfect-ecommerce-sale-store-shop-discount-web_695238-64.jpg";
+// import 'C:/Users/YASH MEHTA/Desktop/Ecommerce website/frontend/src/App.css';
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ export const Header = () => {
                     <div className="relative flex flex-wrap items-center justify-between w-[100%] bg-white group shrink-0">
                         <div>
                             <a href="/">
-                                <img className="h-[120px]" src={logo} alt="Logo" />
+                                <img className="h-[120px]" src="https://img.freepik.com/premium-vector/online-shop-logo-design-template-perfect-ecommerce-sale-store-shop-discount-web_695238-64.jpg" alt="Logo" />
                             </a>
                         </div>
                         <div className="items-center justify-between hidden gap-12 text-black md:flex">
